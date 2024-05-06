@@ -46,3 +46,9 @@ Os conteúdos, em tópicos de discussão, abordados por material de Aula são os
     16° Regressão Linear Múltipla
     
     17° ANOVA
+
+**Aula4**:
+
+    18° Distribuições de Probabilidade Discreta
+    
+    19° Distribuições de Probabilidade Continuas
