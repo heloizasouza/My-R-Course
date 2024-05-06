@@ -52,6 +52,9 @@ sd(mtcars$mpg)^2
 median(mtcars$mpg)
 # amplitude dos dados
 range(mtcars$mpg)
+# quantis
+quantile(x = mtcars$mpg)
+quantile(x = mtcars$mpg, probs = seq(0,1,0.1))
 # tabela de frequências absolutas
 table(mtcars$cyl)
 # tabela de frequências relativas
