@@ -5,7 +5,7 @@ Este foi um curso criado para ser ministrado em poucas aulas para pessoas com co
 
 Os conteúdos, em tópicos de discussão, abordados por material de Aula são os seguintes:
 
-Aula1:
+**Aula1**:
 
     1° O que são Projetos no RStudio?# 1° O que são Projetos no RStudio?
     
@@ -26,7 +26,8 @@ Aula1:
     9° Pacotes
 
     
-Aula2:
+**Aula2**:
+
     10° Importação de dados
     
     11° Funções básicas
@@ -40,7 +41,8 @@ Aula2:
     15° Regressão Linear
 
     
-Aula3:
+**Aula3**:
+
     16° Regressão Linear Múltipla
     
     17° ANOVA
