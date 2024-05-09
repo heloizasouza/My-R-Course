@@ -1,6 +1,9 @@
 rm(list = ls())
 
-# 18° Distribuições de Probabilidade Discreta
+
+# 18° Distribuições de Probabilidade Discreta -----------------------------
+
+
 
 # Poisson
 
@@ -25,7 +28,10 @@ y <- dbinom(x = x, size = 450, prob = 1/7)
 plot(x, y, main = "Binomial")
 
 
-# 19° Distribuições de Probabilidade Continuas
+
+# 19° Distribuições de Probabilidade Continuas ----------------------------
+
+
 
 # Normal
 

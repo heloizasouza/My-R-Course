@@ -1,11 +1,15 @@
-# 1° O que são Projetos no RStudio?
+
+# 1° O que são Projetos no RStudio? ---------------------------------------
+
 
 # Um projeto nada mais é do que uma pasta no seu computador. 
 # Nessa pasta, estarão todos os arquivos que você usará ou criará na sua análise.
 # A principal razão de utilizarmos projetos é organização.
 
 
-# 2° Telas e Atalhos no RStudio
+
+# 2° Telas e Atalhos no RStudio -------------------------------------------
+
 
 # CTRL+ENTER : roda a(s) linha(s) selecionada(s) no script. O atalho mais utilizado.
 # ALT+- : cria no script um sinal de atribuição (<-). Você o usará o tempo todo.
@@ -13,7 +17,9 @@
 # ALT+SHIFT+K : abre uma janela com todos os atalhos disponíveis.
 
 
-# 3° Pedindo ajuda no R
+
+# 3° Pedindo ajuda no R ---------------------------------------------------
+
 
 # pesquisa de ajuda basica
 ?mean
@@ -28,7 +34,10 @@ library(help = "base")
 library(help = "dplyr")
 
 
-# 4° uso do R como uma calculadora
+
+# 4° uso do R como uma calculadora ----------------------------------------
+
+
 
 #soma
 2+3
@@ -52,7 +61,10 @@ round(sqrt(61),2)
 round()
 
 
-# 5° Criando objetos 
+
+# 5° Criando objetos ------------------------------------------------------
+
+ 
 
 # Existem diferentes maneiras de declarar um objeto
 x<-10
@@ -76,7 +88,11 @@ meu.objeto <- 5
 _objeto <- 2
 meu-objeto <- 3
 
-# 6° Listando e removendo objetos
+
+
+#  6° Listando e removendo objetos ----------------------------------------
+
+
 ls()
 x;w
 rm(x,w)					#remove os objetos x e w
@@ -89,7 +105,10 @@ ls()
 # em seguida, pressionar Ctrl+l no teclado.
 
 
-# 7° Classes dos objetos
+
+# 7° Classes dos objetos --------------------------------------------------
+
+
 
 x <- 1
 class(x)
@@ -110,7 +129,10 @@ valor <- 2
 paste0("O ", nome)
 
 
-# 8° Data Frames
+
+# 8° Data Frames ----------------------------------------------------------
+
+
 
 # Os data frames são equivalentes a uma tabela de dados ou uma planilha do Excel.
 # A principal característica de um data frame é possuir linhas e colunas.
@@ -124,7 +146,10 @@ head(USArrests)
 head(VADeaths)
 
 
-# 9° Pacotes
+
+
+# 9° Pacotes --------------------------------------------------------------
+
 
 install.packages("ggplot2")
 library(ggplot2)

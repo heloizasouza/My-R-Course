@@ -33,7 +33,8 @@ diamonds <- diamonds |>
          clarityf = as.factor(as.character(clarity)))
 
 
-# 16° Regressão Linear Múltipla
+# 16° Regressão Linear Múltipla -------------------------------------------
+
 
 # modelo de regressão múltipla de efeitos principais
 
@@ -119,7 +120,8 @@ shapiro.test(residuo)
 
 
 
-# 17° ANOVA
+# 17° ANOVA ---------------------------------------------------------------
+
 
 # Anova de 1 fator
 
