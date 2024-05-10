@@ -36,12 +36,12 @@ Os conteúdos, em tópicos de discussão, abordados por material de Aula são os
     
     13° Gráficos com pacote ggplot2
     
+    
+**Aula3**:
+
     14° Correlação
     
     15° Regressão Linear
-
-    
-**Aula3**:
 
     16° Regressão Linear Múltipla
     
