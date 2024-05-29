@@ -1,9 +1,20 @@
 rm(list = ls())
 
+# carregando esse pacote para fazer transformações nos dados, fazer gráficos e 
+# usar o conjunto de dados diamonds do pacote ggplot2
+library(tidyverse)
+
+# pacote usado para executar o comando HSD.test
+library(agricolae)
+
+# Abrindo a lista do Pacote "datasets" de conjuntos de dados disponíveis no R
+library(help = "datasets")
+
+
+
 # 14° Correlação ----------------------------------------------------------
 
 
-rm(list=ls())
 dados <- data.frame(renda=c(10,15,12,70,80,100,20,30,10,60),
                     nfilhos=c(8,6,5,1,2,2,3,2,6,1),
                     estudo=c(3,5,5,12,16,18,8,8,4,8))
@@ -35,7 +46,7 @@ dados2 <- data.frame(leite = c(26, 25, 31,29, 27, 31,32,28,30,30),
 plot(dados2$chuva,dados2$leite,pch=19,col="blue", 
      xlab="Precipitação pluviométrica",ylab="Produção de Leite")
 
-# modelo linear ajustado
+# modelo linear simples ajustado
 mod <- lm(leite~chuva, data = dados2)
 summary(mod)
 
@@ -47,25 +58,31 @@ abline(lm(leite~chuva, data = dados2),lwd=4,col="grey")
 # valores ajustados
 points(dados2$chuva,fitted(mod),col="red",pch=19)
 
+
+# conjunto de dados para Regressão Múltipla
+data("diamonds")
 diamonds$cutf <- as.factor(as.character(diamonds$cut))
 diamonds$clarityf <- as.factor(as.character(diamonds$clarity))
+
+insetos <- read.table("InsectSprays.txt")
+
+insetos <- insetos |>
+  mutate(spray2 = case_when(
+    spray == "A" ~ 1,
+    spray == "B" ~ 2,
+    spray == "C" ~ 3,
+    spray == "D" ~ 4,
+    spray == "E" ~ 5,
+    spray == "F" ~ 6,
+  ))
 
 # Modelo de Regressão Múltipla
 mod1 <- lm(formula = price ~ carat + cutf + depth + clarityf, data = diamonds)
 summary(mod1)
+model.matrix(mod1)
 # análise de resíduos
 plot(mod1)
 
-
-# carregando esse pacote para fazer transformações nos dados, fazer gráficos e 
-# usar o conjunto de dados diamonds do pacote ggplot2
-library(tidyverse)
-
-# pacote usado para executar o comando HSD.test
-library(agricolae)
-
-# Abrindo a lista do Pacote "datasets" de conjuntos de dados disponíveis no R
-library(help = "datasets")
 
 
 # Carregamento de dados e Transformações
@@ -161,6 +178,10 @@ plot(mod3)
 residuo <- residuals(mod3)
 # teste de normalidade dos resíduos de Shapiro-Wilk
 shapiro.test(residuo)
+# teste de homocedasticidade
+bartlett.test(residuo~cylf)
+
+
 
 
 fit3 <- lm(formula = price ~ carat*depth*cutf, data = diamonds)

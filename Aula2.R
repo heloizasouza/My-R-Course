@@ -121,6 +121,9 @@ ggplot(data = sprays, mapping = aes(x = as.factor(treatment), y = decrease)) +
   labs(x = "Tratamentos", y = "Diminuição do volume", fill = "Tratamentos") + 
   theme_minimal()
 
+ggplot(data = insetos, mapping = aes(x = spray, y = count)) +
+  geom_point()
+
 # gráfico de dispersão
 ggplot(data = mtcars, mapping = aes(x = wt, y = mpg)) + 
   geom_point() +
@@ -150,4 +153,5 @@ ggplot(data = insetos, mapping = aes(x = spray, y = count)) +
 ggplot(data = mtcars, mapping = aes(x = wt, y = mpg)) + 
   geom_point() +
   geom_smooth(method = "lm")
+
 
