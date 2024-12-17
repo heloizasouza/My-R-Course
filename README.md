@@ -7,7 +7,7 @@ Os conteúdos, em tópicos de discussão, abordados por material de Aula são os
 
 **Aula1**:
 
-    1° O que são Projetos no RStudio?# 1° O que são Projetos no RStudio?
+    1° O que são Projetos no RStudio?
     
     2° Telas e Atalhos no RStudio
     
@@ -52,3 +52,6 @@ Os conteúdos, em tópicos de discussão, abordados por material de Aula são os
     18° Distribuições de Probabilidade Discreta
     
     19° Distribuições de Probabilidade Continuas
+
+    20° Testes Estatísticos
+    
