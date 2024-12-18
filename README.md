@@ -54,4 +54,22 @@ Os conteúdos, em tópicos de discussão, abordados por material de Aula são os
     19° Distribuições de Probabilidade Continuas
 
     20° Testes Estatísticos
+
+
+## Dependênicas
+
+**Pacotes:**
+- `ggplot2`: Criação de gráficos e visualizações de dados.
+- `agricolae`: Análise de experimentos agrícolas e estatísticas relacionadas.
+- `tidyverse`: Conjunto de pacotes para manipulação e visualização de dados de forma eficiente.
+
+**Conjuntos de dados:**
+- `mtcars`: Conjunto de dados sobre características de carros.
+- `USArrests`: Dados sobre criminalidade nos Estados Unidos.
+- `VADeaths`: Dados de mortalidade por causas específicas em Virgínia.
+- `diamonds`: Conjunto de dados sobre características e preços de diamantes.
+- `longley`: Dados econômicos históricos dos EUA.
+- `datasets`: Conjunto de dados de exemplo incluídos no R.
+    
+    
     
